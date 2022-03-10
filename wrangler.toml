@@ -1,0 +1,18 @@
+name = "bingo"
+type = "javascript"
+
+account_id = "8d37d37dac0fd17e48b41f026dcef2c1"
+workers_dev = true
+zone_id = "6d690b130729f1bb982cb1fa7567c489"
+route = "bingo.wentzt.dev/*"
+compatibility_date = "2022-02-06"
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = "./public"
+entry-point = "./"
